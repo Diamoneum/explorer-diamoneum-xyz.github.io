@@ -1,23 +1,23 @@
 ![image](https://cdn.qwertycoin.org/images/press/other/qwc-github-3.png)
 
-**Qwertycoin is a decentralized peer-to-peer protocol for safe payments worldwide.**
+**Diamoneum is a decentralized peer-to-peer protocol for safe payments worldwide.**
 
-### Qwertycoin Blockchain Explorer
+### Diamoneum Blockchain Explorer
 
-Block explorer for Qwertycoin CryptoNote based cryptocurrency based on the Karbowanec Block Explorer
+Block explorer for Diamoneum CryptoNote based cryptocurrency based on the Karbowanec Block Explorer
 
 #### Installation
 
-1) It takes data from daemon qwertycoind. It should be accessible from the Internet. Run qwertycoind with open port as follows:
+1) It takes data from daemon Diamoneumd. It should be accessible from the Internet. Run qwertycoind with open port as follows:
 ```bash
-./qwertycoind --restricted-rpc --enable-cors=* --enable-blockchain-indexes --rpc-bind-ip=0.0.0.0 --rpc-bind-port=8197
+./Diamoneumd --restricted-rpc --enable-cors=* --enable-blockchain-indexes --rpc-bind-ip=0.0.0.0 --rpc-bind-port=57576
 ```
 2) Just upload to your website and change 'api' variable in config.js to point to your daemon.
 
 ## Donate
 
 ```
-QWC: QWC1K6XEhCC1WsZzT9RRVpc1MLXXdHVKt2BUGSrsmkkXAvqh52sVnNc1pYmoF2TEXsAvZnyPaZu8MW3S8EWHNfAh7X2xa63P7Y
+DIAM: diamowieNXVVxGW2GbJERHgawnfvWokZ6bHnzYC2w67KMyV1BiT9Aux6JzY1wg4HmJHMoYJQdyj5LHKKEsFP2FBsA5aimMoQ46
 ```
 ```
 BTC: 1DkocMNiqFkbjhCmG4sg9zYQbi4YuguFWw
@@ -37,4 +37,4 @@ ETN: etnkJXJFqiH9FCt6Gq2HWHPeY92YFsmvKX7qaysvnV11M796Xmovo2nSu6EUCMnniqRqAhKX9AQ
 
 #### Thanks
 
-Cryptonote Developers, Bytecoin Developers, Monero Developers, Karbo, Qwertycoin Community
+Cryptonote Developers, Bytecoin Developers, Monero Developers, Karbo, Qwertycoin Community, Diamoneum Developers
