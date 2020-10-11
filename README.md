@@ -1,4 +1,4 @@
-![image](https://cdn.qwertycoin.org/images/press/other/qwc-github-3.png)
+![image](https://camo.githubusercontent.com/9bf9a641ffde075e1c634199db0f2925595395a4/687474703a2f2f6469616d6f6e65756d2e78797a2f77702d636f6e74656e742f75706c6f6164732f323032302f31302f4469616d6f6e65756d2d4c6f676f2d4578616d706c652d312d312e706e67)
 
 **Diamoneum is a decentralized peer-to-peer protocol for safe payments worldwide.**
 
