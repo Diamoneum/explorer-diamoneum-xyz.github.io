@@ -290,7 +290,8 @@ var JSBigInt = (function () {
             s = expandExponential(s);
         }
 
-        var prefixRE;
+        var 
+prefixRE;
         if (typeof base === "undefined") {
             prefixRE = '0[xcb]';
         } else if (base == 16) {
@@ -1625,7 +1626,7 @@ return{_strlen:lb,_ge_mul8:Va,_keccak:db,_ge_scalarmult:Ta,_ge_fromfe_frombytes_
 var salt = '4721283fee2db41e1f2fc50ea9f6d783'; // IMPORTANT: never change it, otherwise it will be impossible to restore previously generated wallets!
 var config = {
     coinUnitPlaces: 8,
-    addressPrefix: 0x14820c
+    addressPrefix: 0x9825b
 };
 var cnUtil = (function(initConfig) {
     //var config = $.extend({}, initConfig);
@@ -1817,13 +1818,13 @@ var cnUtil = (function(initConfig) {
         keys.spend = this.generate_keys(first);
         // this is monero style
         // var second = this.keccak(keys.spend.sec, 32, 32);
-        // Qwertycoin paperwallet compatible
+        // Diamoneum paperwallet compatible
         var second = this.keccak(first, 32, 32);
         keys.view = this.generate_keys(second);
         keys.public_addr = this.pubkeys_to_string(keys.spend.pub, keys.view.pub);
 
 	var prefix = this.encode_varint(CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX);
-  	var privateKeyBase = prefix + keys.spend.pub + keys.view.pub + keys.spend.sec + keys.view.sec; // Qwertycoin privateKeyBase
+  	var privateKeyBase = prefix + keys.spend.pub + keys.view.pub + keys.spend.sec + keys.view.sec; // Diamoneum privateKeyBase
     var checksum = this.cn_fast_hash(privateKeyBase).slice(0, ADDRESS_CHECKSUM_SIZE * 2);
 
 	keys.privateKeys = cnBase58.encode(privateKeyBase + checksum);
@@ -1845,7 +1846,7 @@ var cnUtil = (function(initConfig) {
         if (public_addr.toUpperCase().slice(0, prefix.length) != prefix.toUpperCase())
           return null;
         // var second = this.keccak(keys.spend.sec, 32, 32);
-        // Qwertycoin paperwallet compatible
+        // Diamoneum paperwallet compatible
         var second = this.keccak(first, 32, 32);
         keys.view = this.generate_keys(second);
         keys.public_addr = this.pubkeys_to_string(keys.spend.pub, keys.view.pub);
@@ -1853,7 +1854,7 @@ var cnUtil = (function(initConfig) {
 
 
 	var prefix = this.encode_varint(CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX);
-  	var privateKeyBase = prefix + keys.spend.pub + keys.view.pub + keys.spend.sec + keys.view.sec; // Qwertycoin privateKeyBase
+  	var privateKeyBase = prefix + keys.spend.pub + keys.view.pub + keys.spend.sec + keys.view.sec; // Diamoneum privateKeyBase
     var checksum = this.cn_fast_hash(privateKeyBase).slice(0, ADDRESS_CHECKSUM_SIZE * 2);
 
 	keys.privateKeys = cnBase58.encode(privateKeyBase + checksum);
@@ -2062,7 +2063,7 @@ var cnUtil = (function(initConfig) {
     function padLeft(str, len, char) {
         while (str.length < len) {
             str = char + str;
-        }
+        }crypto_utils.js
         return str;
     }
 
